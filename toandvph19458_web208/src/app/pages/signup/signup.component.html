@@ -1,0 +1,26 @@
+<div class="container">
+    <form [formGroup]="formAdd" (ngSubmit)="onHandleSubmit()" class="">
+      <div class="mb-3">
+        <label for="" class="form-label">email</label>
+        <input type="text" class="form-control" formControlName="email" />
+      </div>
+      <div *ngIf="formAdd.get('email')?.hasError('required')&&(formAdd.get('email')?.touched||formAdd.get('email')?.dirty)">
+        khong bo trong
+      </div>
+      <div *ngIf="formAdd.get('email')?.hasError('email')&&(formAdd.get('email')?.touched||formAdd.get('email')?.dirty)">
+        khong dung dinh dang
+      </div>
+      <div *ngIf="formAdd.get('email')?.hasError('minlength')&&(formAdd.get('email')?.touched||formAdd.get('email')?.dirty)">
+        it nhat 6 ki tu
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">password</label
+        ><input type="text" class="form-control" formControlName="password" />
+      </div>
+      
+      <button>Submit</button>
+    </form>
+  </div>
+  
+
+

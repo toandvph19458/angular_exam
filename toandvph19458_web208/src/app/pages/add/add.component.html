@@ -1,0 +1,21 @@
+<div class="container">
+    <form [formGroup]="formAdd" (ngSubmit)="onHandleSubmit()" class="">
+      <div class="mb-3">
+        <label for="" class="form-label">name</label>
+        <input type="text" class="form-control" formControlName="name" />
+      </div>
+      <div *ngIf="formAdd.get('name')?.hasError('required')&&(formAdd.get('name')?.touched||formAdd.get('name')?.dirty)">
+        khong bo trong
+      </div>
+      <div *ngIf="formAdd.get('name')?.hasError('minlength')&&(formAdd.get('name')?.touched||formAdd.get('name')?.dirty)">
+        it nhat 6 ki tu
+      </div>
+      <div class="mb-3">
+        <label for="" class="form-label">price</label
+        ><input type="number" class="form-control" formControlName="price" />
+      </div>
+      
+      <button>Submit</button>
+    </form>
+  </div>
+  

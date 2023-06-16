@@ -7,8 +7,21 @@
     },
     {
       "id": 2,
-      "name": "12345645 update",
+      "name": "12345645 update1",
       "price": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "1234567",
+      "role": "admin"
+    },
+    {
+      "email": "user@gmail.com",
+      "password": "$2a$10$X.MPSEca69kCVdjcsqi1Hec.hQqq3ZnJfvRvoOXukiz8hhD1nV4vO",
+      "id": 2
     }
   ]
 }

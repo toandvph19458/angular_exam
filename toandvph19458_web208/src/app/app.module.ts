@@ -4,21 +4,24 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TableProductsComponent } from './pages/table-products/table-products.component';
-import { ProductAddComponent } from './pages/product-add/product-add.component';
-import { UpdateProductComponent } from './pages/update-product/update-product.component';
+import { TableComponent } from './pages/table/table.component';
+import { AddComponent } from './pages/add/add.component';
+import { UpdateComponent } from './pages/update/update.component';
 import { LayoutAdminComponent } from './layouts/layout-admin/layout-admin.component';
 import { LayoutClientComponent } from './layouts/layout-client/layout-client.component';
-
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableProductsComponent,
-    ProductAddComponent,
-    UpdateProductComponent,
+    TableComponent,
+    AddComponent,
+    UpdateComponent,
     LayoutAdminComponent,
     LayoutClientComponent,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
